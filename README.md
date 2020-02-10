@@ -26,6 +26,12 @@ $ npm start
 This will open a browser at http://localhost:3000/
 
 
+### Coding choices
+
+- I have not used a state management provider such as Redux or Mobx as I believe the size of the application is quite small and React is very good at managing state for smaller applications
+
+
+
 ### File Structure
 The `src` folder is composed of the main parts of the app - Api, Components, Domain, Hooks, Models and State. 
 
@@ -36,5 +42,8 @@ The `src` folder is composed of the main parts of the app - Api, Components, Dom
 - types - contains a single file with all the typescript types for the project
 
 
+
+
 ### Future improvements (Step 5)
 - Implement integration testing using a tool like Cypress. I have experience with cypress. If you do need demos, let me know. 
+
