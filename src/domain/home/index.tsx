@@ -1,6 +1,7 @@
 import { AppBar, CssBaseline, makeStyles, Toolbar, Typography } from '@material-ui/core';
 import React from 'react';
 import UserSearch from '../user-search';
+import ErrorBoundary from '../../components/ErrorBoundary';
 
 
 const useStyles = makeStyles(theme => ({
@@ -28,12 +29,14 @@ const Home = () => {
                 <Toolbar>
                     <Typography variant="h6" noWrap>
                         Github Repo Browser
-                        </Typography>
+                    </Typography>
                 </Toolbar>
             </AppBar>
             <main className={classes.content}>
                 <div className={classes.toolbar} />
-                <UserSearch />
+                <ErrorBoundary>
+                    <UserSearch />
+                </ErrorBoundary>
             </main>
         </div>
     );

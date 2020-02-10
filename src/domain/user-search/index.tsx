@@ -5,6 +5,7 @@ import UserCard from '../../components/UserCard';
 import { SearchResultType, GithubUserType, Orgs, RepoType } from '../../types/types';
 import API from '../../api';
 import UserData from '../user-data';
+import ErrorBoundary from '../../components/ErrorBoundary';
 
 
 const useStyles = makeStyles(theme => ({
@@ -60,15 +61,19 @@ const UserSearch = () => {
                     <TextField value={searchString} onChange={onStringChange} fullWidth placeholder={"Start by typing a Github Username..."} />
                     {loading ? <LinearProgress /> : null}
                     <div className={classes.scrollableResults}>
-                        {response ? response.items.map((user: SearchResultType, i: number) => (
-                            <UserCard user={user} key={i} onClick={loadUserData} />
-                        )) : null}
+                        <ErrorBoundary>
+                            {response ? response.items.map((user: SearchResultType, i: number) => (
+                                <UserCard user={user} key={i} onClick={loadUserData} />
+                            )) : null}
+                        </ErrorBoundary>
                     </div>
                 </div>
 
             </Grid>
             <Grid container item xs={9} spacing={1}>
-                {user.login || orgs.length > 0 ? <UserData classes={classes} user={user} orgs={orgs} repos={repos} /> : null}
+                <ErrorBoundary>
+                    {user.login || orgs.length > 0 ? <UserData classes={classes} user={user} orgs={orgs} repos={repos} /> : null}
+                </ErrorBoundary>
             </Grid>
         </Grid >
     )
