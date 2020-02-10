@@ -44,6 +44,6 @@ The `src` folder is composed of the main parts of the app - Api, Components, Dom
 
 
 
-### Future improvements (Step 5)
+### Future improvements
 - Implement integration testing using a tool like Cypress. I have experience with cypress. If you do need demos, let me know. 
 
