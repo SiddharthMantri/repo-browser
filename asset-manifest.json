@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/repo-browser/static/css/main.d1b05096.chunk.css",
+    "main.js": "/repo-browser/static/js/main.8884966e.chunk.js",
+    "main.js.map": "/repo-browser/static/js/main.8884966e.chunk.js.map",
+    "runtime-main.js": "/repo-browser/static/js/runtime-main.f320fc4c.js",
+    "runtime-main.js.map": "/repo-browser/static/js/runtime-main.f320fc4c.js.map",
+    "static/js/2.979ae0c2.chunk.js": "/repo-browser/static/js/2.979ae0c2.chunk.js",
+    "static/js/2.979ae0c2.chunk.js.map": "/repo-browser/static/js/2.979ae0c2.chunk.js.map",
+    "index.html": "/repo-browser/index.html",
+    "precache-manifest.b01e114295a225e97a79fd25cf085138.js": "/repo-browser/precache-manifest.b01e114295a225e97a79fd25cf085138.js",
+    "service-worker.js": "/repo-browser/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/repo-browser/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.979ae0c2.chunk.js.LICENSE.txt": "/repo-browser/static/js/2.979ae0c2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f320fc4c.js",
+    "static/js/2.979ae0c2.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.8884966e.chunk.js"
+  ]
+}
